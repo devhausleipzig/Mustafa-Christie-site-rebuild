@@ -4,6 +4,11 @@ background 2: #2d4055
 font: #051320
 bg-rectangles: #76dcc2 #051320 #6a7c86 */
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	background-color: #2d4055;
 	color: #051320;
@@ -14,7 +19,107 @@ body {
 	background-color: #eceeee;
 	max-width: 1200px;
 	height: 1000px;
-	margin: 50px auto;
+	margin: 30px auto;
+}
+
+/* background shapes */
+
+.background {
+	float: left;
+	padding-left: 80px;
+}
+
+#shape-white {
+	width: 220px;
+	height: 180px;
+	background-color: white;
+	border-bottom-right-radius: 60px;
+	position: absolute;
+	top: 51px;
+	left: 395px;
+}
+
+#shape-person {
+	width: 220px;
+	height: 350px;
+	border-bottom-right-radius: 60px;
+	border-top-left-radius: 60px;
+	background: url("images/streetwear.gif") 45% 42%;
+	position: absolute;
+	top: 242px;
+	border-bottom: 12px solid #eceeee;
+	border-right: 12px solid #eceeee;
+	z-index: 1;
+}
+
+#shape-aqua {
+	width: 220px;
+	height: 310px;
+	background-color: #76dcc2;
+	border-top-right-radius: 60px;
+	position: absolute;
+	left: 395px;
+	top: 242px;
+}
+
+#shape-dark {
+	width: 220px;
+	height: 160px;
+	background-color: #051320;
+	border-bottom-right-radius: 60px;
+	color: white;
+	font-size: 12px;
+	font-weight: 100;
+	position: absolute;
+	top: 550px;
+}
+
+#shape-dark p {
+	padding: 110px 0 0 20px;
+}
+
+#shape-circle {
+	background-color: #eceeee;
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+	position: absolute;
+	left: 395px;
+	top: 455px;
+}
+
+#shape-foil {
+	background: url("images/tinfoil.jpeg") 40%;
+	background-size: cover;
+	width: 190px;
+	height: 190px;
+	border-radius: 50%;
+	position: absolute;
+	left: 410px;
+	top: 470px;
+	z-index: 1;
+	/* padding: 5px;
+	border: 2px solid #051320; */
+}
+
+#shape-dot {
+	height: 7px;
+	width: 7px;
+	border-radius: 50%;
+	background-color: #eceeee;
+	position: absolute;
+	top: 625px;
+	left: 182px;
+	z-index: 1;
+}
+
+#shape-paint {
+	width: 220px;
+	height: 330px;
+	border-top-right-radius: 60px;
+	background: url("images/paint.gif");
+	position: absolute;
+	top: 722px;
 }
 
 /* content area on the right side */
@@ -22,7 +127,7 @@ body {
 .content {
 	width: 500px;
 	float: right;
-	padding-right: 100px;
+	padding-right: 80px;
 }
 
 /* slogan area within content on right */
