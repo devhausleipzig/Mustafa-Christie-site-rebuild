@@ -6,6 +6,8 @@ bg-rectangles: #76dcc2 #051320 #6a7c86 */
 
 body {
 	background-color: #2d4055;
+	color: #2d4055;
+	display: block;
 }
 
 .container {
