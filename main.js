@@ -15,6 +15,17 @@ audioElement.addEventListener(
 	false
 );
 
+const playButton = document.querySelector("#playButton");
+let playing = true;
+playButton.addEventListener("click", function () {
+	if (playing) {
+		audioElement.pause();
+	} else {
+		audioElement.play();
+	}
+	playing = !playing;
+});
+
 // const playButton = document.querySelector("#playButton");
 
 // playButton.addEventListener("click", togglePlay());
