@@ -91,9 +91,12 @@ bg-rectangles: #76dcc2 #051320 #6a7c86 */
 	--footerCon: var(--footerCon-light);
 } */
 
-
+body{
+	background-color: #2d4055;
+}
 .container {
-background-color: #eceeee;
+background-color: gray;
+
 	max-width: 1335px;
 	height: auto;
 	margin: 50px auto;

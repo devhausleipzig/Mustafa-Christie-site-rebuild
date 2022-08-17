@@ -40,12 +40,12 @@
 const btn = document.getElementById("nightModeButton");
 const container = document.querySelector(".container");
     btn.addEventListener("click", function onClick(event) {
-    if (container.style.background !== "#0d185079") {
-        container.style.background = "#0d185079";
+    if (container.style.background !== "blanchedalmond") {
+        container.style.background = "blanchedalmond";
     } else {
-            container.style.background = "#eceeee";
+            container.style.background = "gray";
     }
-    container.style.color='white'
+
 });
 
 // const button2 = document.querySelector(".bt");
