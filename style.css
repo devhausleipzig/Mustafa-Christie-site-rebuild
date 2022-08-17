@@ -1,3 +1,28 @@
+
+/* color palette
+background 1: #eceeee
+background 2: #2d4055
+font: #051320
+bg-rectangles: #76dcc2 #051320 #6a7c86 */
+
+body {
+	background-color: #2d4055;
+}
+
+.container {
+	background-color: #eceeee;
+	max-width: 1200px;
+	height: auto;
+	margin: 50px auto;
+}
+
+
+#copyRights {
+	background-color: rgb(34, 137, 215);
+}
+
+
+
 /* color palette
 background 1: #eceeee
 background 2: #2d4055
