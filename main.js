@@ -37,31 +37,19 @@
 // document.body.style.background('black')
 // console.log(body.background)
 // })
+const btn = document.getElementById("nightModeButton");
+const container = document.querySelector(".container");
+    btn.addEventListener("click", function onClick(event) {
+    if (container.style.background !== "#0d185079") {
+        container.style.background = "#0d185079";
+    } else {
+            container.style.background = "#eceeee";
+    }
+    container.style.color='white'
+});
 
-// const btn = document.getElementById("nightModeButton");
-// const container = document.querySelector(".container");
-
-// btn.addEventListener("click", function onClick(event) {
- 
-
-//   if (container.style.background !== "#0d185079") {
-//     container.style.background = "#0d185079";
-//   } else {
-//     container.style.background = "#eceeee";
-//   }
- 
-
-//   // container.style.color='white'
-// });
-
-const button2 = document.querySelector(".bt");
-
-
-button2.addEventListener("click", function onClick(event) {
- 
-
-    container.style.background ='#eceeee'
-  
-  
-    // container.style.color='white'
-  });
+// const button2 = document.querySelector(".bt");
+// button2.addEventListener("click", function onClick(event){
+//     Container.style.background = '#eceeee'
+//     container.style.color = 'white'
+// })
