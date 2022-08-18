@@ -31,12 +31,11 @@ body {
 
 #shape-white {
 	width: 220px;
-	height: 179px;
+	height: 176px;
 	background-color: white;
 	border-bottom-right-radius: 60px;
-	position: absolute;
-	top: 51px;
-	left: 395px;
+	position: relative;
+	left: 235px;
 }
 
 #shape-person {
@@ -57,9 +56,9 @@ body {
 	height: 310px;
 	background-color: #76dcc2;
 	border-top-right-radius: 60px;
-	position: absolute;
-	left: 395px;
-	top: 242px;
+	position: relative;
+	left: 235px;
+	top: 15px;
 }
 
 #shape-aqua img {
@@ -93,9 +92,9 @@ body {
 	width: 220px;
 	height: 220px;
 	border-radius: 50%;
-	position: absolute;
-	left: 398px;
-	top: 455px;
+	position: relative;
+	left: 235px;
+	top: -75px;
 }
 
 #shape-outline {
@@ -103,18 +102,18 @@ body {
 	height: 200px;
 	border-radius: 50%;
 	border: 1px solid #051320;
-	position: absolute;
-	left: 407px;
-	top: 466px;
+	position: relative;
+	left: 244px;
+	top: -285px;
 }
 
 #shape-line {
 	height: 100px;
 	width: 1px;
 	background-color: #051320;
-	position: absolute;
-	left: 507px;
-	top: 668px;
+	position: relative;
+	left: 344px;
+	top: -285px;
 }
 
 #shape-line-dot {
@@ -122,9 +121,9 @@ body {
 	width: 7px;
 	border-radius: 50%;
 	background-color: #051320;
-	position: absolute;
-	top: 765px;
-	left: 504px;
+	position: relative;
+	top: -285px;
+	left: 341px;
 }
 
 /* foil image changed to silver ball */
@@ -135,9 +134,9 @@ body {
 	width: 180px;
 	height: 180px;
 	border-radius: 50%;
-	position: absolute;
-	left: 418px;
-	top: 477px;
+	position: relative;
+	left: 255px;
+	top: -620px;
 	z-index: 1;
 }
 
@@ -145,9 +144,9 @@ body {
 	text-align: center;
 	color: #4a4041;
 	font-size: 14px;
-	position: absolute;
-	top: 795px;
-	left: 452px;
+	position: relative;
+	top: -255px;
+	left: 238px;
 }
 
 .background > p a {
@@ -160,7 +159,7 @@ body {
 	border-radius: 50%;
 	background-color: #eceeee;
 	position: relative;
-	top: 575px;
+	top: -657px;
 	left: 20px;
 	z-index: 1;
 }

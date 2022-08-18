@@ -16,12 +16,15 @@ audioElement.addEventListener(
 );
 
 const playButton = document.querySelector("#playButton");
+const svgButton = document.querySelector("#btn-toggle");
 let playing = true;
 playButton.addEventListener("click", function () {
 	if (playing) {
 		audioElement.pause();
+		svgButton.classList.toggle("fa-circle-play");
 	} else {
 		audioElement.play();
+		svgButton.classList.toggle("fa-circle-pause");
 	}
 	playing = !playing;
 });
