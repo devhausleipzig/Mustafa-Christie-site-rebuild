@@ -1,8 +1,11 @@
+let isPlaying = false;
+
 audioElement = new Audio("audio/Makaih Beats - Reflection.mp3");
 audioElement.addEventListener(
 	"canplay",
 	function () {
 		audioElement.play();
+		isPlaying = true;
 	},
 	false
 );
@@ -17,16 +20,18 @@ audioElement.addEventListener(
 
 const playButton = document.querySelector("#playButton");
 const svgButton = document.querySelector("#btn-toggle");
-let playing = true;
+
 playButton.addEventListener("click", function () {
-	if (playing) {
+	if (isPlaying) {
 		audioElement.pause();
 		svgButton.classList.toggle("fa-circle-play");
+		svgButton.classList.toggle("fa-circle-pause");
 	} else {
 		audioElement.play();
+		svgButton.classList.toggle("fa-circle-play");
 		svgButton.classList.toggle("fa-circle-pause");
 	}
-	playing = !playing;
+	isPlaying = !isPlaying;
 });
 
 // const playButton = document.querySelector("#playButton");

@@ -45,7 +45,7 @@ body {
 	border-top-left-radius: 60px;
 	background: url("images/streetwear.gif") 45% 42%;
 	position: absolute;
-	top: 242px;
+	top: 222px;
 	border-bottom: 12px solid #eceeee;
 	border-right: 12px solid #eceeee;
 	z-index: 1;
@@ -166,7 +166,7 @@ body {
 
 #shape-paint {
 	width: 220px;
-	height: 329px;
+	height: 309px;
 	border-top-right-radius: 60px;
 	background: url("images/paint.gif");
 	position: absolute;
