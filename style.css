@@ -31,7 +31,7 @@ body {
 
 #shape-white {
 	width: 220px;
-	height: 176px;
+	height: 178px;
 	background-color: white;
 	border-bottom-right-radius: 60px;
 	position: relative;
@@ -58,7 +58,7 @@ body {
 	border-top-right-radius: 60px;
 	position: relative;
 	left: 233px;
-	top: 15px;
+	top: 14px;
 }
 
 #shape-aqua img {
@@ -66,7 +66,7 @@ body {
 	height: auto;
 	position: absolute;
 	top: 60px;
-	left: 46px;
+	left: 42px;
 }
 
 #shape-dark {
@@ -170,7 +170,7 @@ body {
 	border-top-right-radius: 60px;
 	background: url("images/paint.gif");
 	position: absolute;
-	top: 722px;
+	top: 721px;
 }
 
 /* music title and artist scroller */
