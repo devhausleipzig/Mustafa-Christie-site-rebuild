@@ -1,32 +1,22 @@
+
 /* color palette
 background 1: #eceeee
 background 2: #2d4055
 font: #051320
 bg-rectangles: #76dcc2 #051320 #6a7c86 */
 
-* {
-	margin: 0;
-	padding: 0;
-}
-
 body {
 	background-color: #2d4055;
-	color: #051320;
-	font-family: "DM Sans", sans-serif;
 }
 
-.container {
+.containerLight {
 	background-color: #eceeee;
-	max-width: 1200px;
-	height: 1000px;
-	margin: 30px auto;
+	/* max-width: 1200px;
+	height: auto;
+	margin: 50px auto; */
 }
-
-/* background shapes */
-
-.background {
-	float: left;
-	padding-left: 80px;
+.containerDark {
+	background-color: #2d4055;
 }
 
 #shape-white {
@@ -61,30 +51,27 @@ body {
 	top: 14px;
 }
 
-#shape-aqua img {
-	width: 130px;
+/* body{
+	background-color: #2d4055;
+} */
+
+.container {
+	max-width: 1335px;
 	height: auto;
 	position: absolute;
 	top: 60px;
 	left: 42px;
 }
 
-#shape-dark {
-	width: 220px;
-	height: 160px;
-	background-color: #051320;
-	border-bottom-right-radius: 60px;
-	color: white;
-	font-size: 12px;
-	font-weight: 100;
-	position: absolute;
-	top: 550px;
+nav {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 60px;
 }
-
-#shape-dark p {
-	padding: 110px 0 0 20px;
-	letter-spacing: 1px;
-	font-weight: 100;
+#logoCon, #navCon {
+	display: flex;
+	margin: 2px;
 }
 
 #shape-circle {
@@ -126,7 +113,13 @@ body {
 	left: 338px;
 }
 
-/* foil image changed to silver ball */
+#shopCon {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 59%;
+	margin-left: 0px;
+}
 
 #shape-foil {
 	background: url("images/silverball.jpeg") 40%;
@@ -173,171 +166,129 @@ body {
 	top: 721px;
 }
 
-/* music title and artist scroller */
-
-.scroller {
-	height: 1.2em;
-	line-height: 1.2em;
-	position: relative;
-	top: 45px;
-	left: 25px;
-	overflow: hidden;
-	width: 10em;
-	color: #eceeee;
-	text-shadow: 1px 1px 5px #051320;
-}
-.scroller > span {
-	position: absolute;
-	top: 0;
-	animation: slide 5s infinite;
-	font-weight: bold;
-	text-align: right;
-}
-@keyframes slide {
-	0% {
-		top: 0;
-	}
-	33% {
-		top: -1.3em;
-	}
-	67% {
-		top: -2.5em;
-	}
+#ourstory {
+	text-decoration: none;
+	color: black;
 }
 
-#shape-paint button {
-	height: 50px;
-	width: 50px;
-	background-color: #eceeee;
-	position: absolute;
-	left: 140px;
-	top: 30px;
-	outline: none;
-}
-
-#shape-paint button i {
-	color: #76dcc2;
-}
-
-#shape-paint button i:hover {
-	color: #eceeee;
-}
-
-#shape-paint button:hover {
-	background-color: #76dcc2;
-}
-
-/* content area on the right side */
-
-.content {
-	width: 500px;
-	height: 600px;
-	float: right;
-	margin: 200px 50px 0 0;
-	overflow-y: scroll;
-	padding-right: 30px;
-}
-
-/* slogan area within content on right */
-
-.slogan {
-	padding-bottom: 150px;
-}
-
-h1 {
-	font-size: 65px;
-	font-weight: 600;
-	line-height: 1.2;
-	letter-spacing: 1px;
-}
-
-/* button area under slogan */
-
-.buttons {
-	margin-top: 50px;
+#nighModCon {
 	display: flex;
-	justify-content: flex-start;
-}
-
-button {
-	height: 55px;
-	width: auto;
-	border: none;
-	border-radius: 30px;
-}
-
-button:hover {
-	cursor: pointer;
-}
-
-button:active {
-	cursor: pointer;
-}
-
-#btn-wearnow {
-	color: white;
-	background-color: #051320;
-	font-weight: 300;
-	letter-spacing: 1px;
-	padding: 0 35px;
-}
-
-#btn-wearnow:hover {
-	color: #051320;
-	background-color: white;
-}
-
-#btn-arrow {
-	font-size: 25px;
-	background-color: white;
-	width: 55px;
-	border-radius: 50%;
-}
-
-#btn-arrow:hover {
-	color: white;
-	background-color: #76dcc2;
-}
-
-#btn-texture {
-	background: url("images/silver-fabric.png") no-repeat top right;
-	width: 110px;
-}
-
-#btn-texture:hover {
-	filter: invert();
-}
-
-/* list area at the bottom right */
-
-.list-item {
-	border-top: 2px solid #051320;
-	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	align-items: center;
-	height: 60px;
-	padding-bottom: 45px;
+	width: 39%;
 }
 
-.list-item h2 {
-	font-size: 40px;
-	font-family: "B612 Mono", monospace;
+#cart {
+	text-decoration: none;
+	margin-right: 16px;
+	color: black;
 }
 
-.list-item-center {
+
+
+/* 
+#nightModeButton{
+height: 4	0px;
+background-color: violet
+
+} */
+#nightModeButton {
+	display: grid;
+	place-items: center;
+	width: 30px;
+	height: 30px;
+	margin-right: 15px;
+	border: 2px solid ;
+	border-radius: 50%;
+	cursor: pointer;
+	opacity: .8;
+}
+
+
+#footerCon {
+	display: flex;
+	justify-content: space-around;
+	max-width: 1335px;
+	height: 70px;
+	margin: 50px auto;
+	
+}
+
+#footerRightCon {
+	display: flex;
+	justify-content: space-around;
+	width: 45%;
+	height: 94%;
+	margin-left: 2px;
+	margin-top: 1px;
+}
+
+#adressInf {
+	font-family: 'Poppins', sans-serif;
+	font-size: 700;
+}
+
+#footerGif {
+	width: 60%;
+	background-color: #0d185079;
+}
+
+#footerLeftCon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	width: 45%;
+	height: 94%;
+	margin-left: 2px;
+	margin-top: 1px;
+}
+
+.static {
+	position:absolute;
+	background: white;
+}
+
+.static:hover {
+	opacity:0;
+}
+
+#socialMedia {
 	display: flex;
 	justify-content: space-between;
-	width: 230px;
+	width: 30%;
+}
+/* 
+#twitterButton {
+
+}
+#twitterButton :hover{
+
+}
+/* 
+#twitterButton {
+
+#xingButton {
+
+}
+#xingButton :hover{
+
 }
 
-.list-item img {
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	margin-top: 3px;
+#instaButton {
+
+}
+#instaButton :hover{
+
 }
 
-.list-year {
-	margin-bottom: 22px;
-	font-family: "B612 Mono", monospace;
+#linkedinButton {
+
 }
+#linkedinButton :hover{
+	
+} */
+
+/* #copyRights {
+	background-color: rgb(34, 137, 215);
+} */

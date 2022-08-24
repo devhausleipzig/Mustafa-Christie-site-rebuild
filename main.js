@@ -1,3 +1,35 @@
+
+// const btn = document.getElementById("nightModeButton");
+// const btnIcon = document.getElementById("iconTest");
+// const container = document.querySelector(".container");
+//     btn.addEventListener("click", function onClick(event) {
+// 	btnIcon.classList.toggle("fa-moon");
+// 	btnIcon.classList.toggle("fa-sun");
+//     if (container.classstyle.background !== "blanchedalmond") {
+//         container.style.background = "blanchedalmond";
+//     } else {
+//             container.style.background = "gray";
+//     }
+
+// });
+
+const btn = document.getElementById("nightModeButton");
+const btnIcon = document.getElementById("iconTest");
+const container = document.querySelector(".container");
+    btn.addEventListener("click", function onClick(event) {
+	btnIcon.classList.toggle("fa-moon");
+	btnIcon.classList.toggle("fa-sun");
+    container.classList.toggle('containerLight');
+    container.classList.toggle('containerDark');
+
+});
+
+
+
+
+
+//xxxxxxxxxxx CHRISTIE'S PART XXXXXXXXXXXX
+
 let isPlaying = false;
 
 audioElement = new Audio("audio/Makaih Beats - Reflection.mp3");

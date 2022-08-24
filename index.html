@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>SHOCK</title>
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="fontawesome/css/all.css" />
+
 		<script src="main.js" defer></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,8 +26,40 @@
 		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 	</head>
 	<body>
-		<div class="container">
-			<nav></nav>
+		<div class="container containerLight ">
+			<nav>
+				<div id="logoCon" class="">
+					<div id="" class="XIcon"><img src="xmark-solid.svg" alt="Logo" width="30px" height="30px"></div>
+
+					<span id="WSName">SHOCK</span>
+
+				</div>
+
+				<div id="navCon" class="">
+					<div id="shopCon" class="">
+						<a id="shop" href="./shop.html">Shop</a>
+
+						<a id="lookbook" href="./Lookbook.html">Lookbook</a>
+
+						<a id="ourstory" href="./OurStory.html">Our Story</a>
+
+					</div>
+
+					<div id="nighModCon" class="">
+
+						<a id="cart" href="./Cart.html">Cart</a>
+
+						<!--Night Mode Button-->
+						<button id="nightModeButton" class="nightModeButtonDark">
+						<!-- <button id="bt" class="bt"> -->
+							<i class="fa-solid fa-moon" id="iconTest"></i>
+						<!-- <i class="fa-regular fa-sun-bright"></i> -->
+						</button>
+
+
+					</div>
+				</div>
+			</nav>
 			<main>
 				<div class="background">
 					<div id="shape-person"></div>
@@ -122,7 +156,41 @@
 					</div>
 				</div>
 			</main>
-			<footer></footer>
+			<footer id="footer">
+				<div id="footerCon">
+					<div id="footerRightCon">
+						<div id="adressInf">Flossplatz 15<br>
+						Leipzig	
+						</div>
+						<div id="footerGif" class="static"></div>
+					</div>
+
+					<div id="footerLeftCon">
+
+						<div id="socialMedia">
+							<button id="twitterButton">
+								<i class="fa-brands fa-square-twitter"></i>
+							</button>
+							<button id="xingButton">
+								<i class="fa-brands fa-square-xing"></i>
+							</button>
+							<button id="instaButton">
+								<i class="fa-brands fa-square-instagram"></i>
+							</button>
+							<button id="linkedinButton">
+								<i class="fa-brands fa-linkedin"></i>
+							</button>
+
+							
+						</div>
+						<div id="copyRights">
+							<span>@ All  Rights reserved </span>
+						</div>
+					</div>
+				</div>
+
+			</footer>
 		</div>
+		
 	</body>
 </html>
